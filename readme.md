@@ -16,7 +16,7 @@ The Keras impletation of the StarGAN.
 
 * list_attr_celeba.txt:  The attribute file, containing one-hot encoding for each image. The dimension of label is 40. 
 * Image data used : in the dataset folder: CelebA\Img\img_align_celeba
-* classification loss weight: set to 5 rather than 1 comparing with original paper
+* The training is 40 dims label. If only a few labels are considered, for example, 5 labels: ['Black_Hair','Blond_Hair','Brown_Hair','Male','Young'],then one solusion is train the 40-label network at first, then concatenate extensions(5 input - 40 output, and 40 input - 5 output) on the pretrained model and train both pretrained model and extensions. The training with pretrained model is fast, taking less than 1 epoch. 
 
 
 
