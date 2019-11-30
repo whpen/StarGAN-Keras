@@ -12,6 +12,16 @@ The Keras impletation of the StarGAN.
 
 [CelebA Image Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html "CelebA Image Dataset")
 
+
+
+## Version
+
+Tensorflow:1.14.0
+
+Keras:2.2.5
+
+
+
 ## Note for the code
 
 * list_attr_celeba.txt:  The attribute file, containing one-hot encoding for each image. The dimension of label is 40. 
@@ -23,4 +33,6 @@ The Keras impletation of the StarGAN.
 ## Reference paper
 
 [StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation](https://arxiv.org/pdf/1711.09020.pdf)
+
+
 
